@@ -4,10 +4,12 @@ public class SquareRoot {
     public static void main(String[] args) {
         int squareRoot=26;
 
-        int start=0,end=squareRoot,ans=0;
+        long start=0;
+        long ans=0;
+        long end=squareRoot/2;
 
         while(start<=end){
-            int mid=start+(end-start)/2;
+            long mid=(start+(end-start)/2);
 
             if(mid*mid > squareRoot){
                 end=mid-1;
